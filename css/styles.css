@@ -11045,3 +11045,65 @@ html {
 .copyright {
   background-color: #f58400;
 }
+
+.charity-timeline {
+  position: relative;
+  padding-left: 0;
+}
+
+.charity-timeline::before {
+  display: none;
+}
+
+.charity-timeline-item {
+  position: relative;
+  margin-bottom: 1.25rem;
+}
+
+.charity-timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.charity-timeline-marker {
+  display: none;
+}
+
+.charity-timeline-meta {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 0.9rem;
+  color: rgba(var(--bs-secondary-rgb), 0.75);
+}
+
+.charity-timeline-title {
+  font-weight: 800;
+  color: var(--bs-secondary);
+  margin-bottom: 0.35rem;
+}
+
+.charity-timeline-item .card {
+  border-radius: 0.75rem;
+  border: 0.125rem solid rgba(0, 0, 0, 0.06);
+}
+
+.charity-timeline-item-current .charity-timeline-marker {
+  border-color: var(--bs-primary);
+}
+
+.charity-timeline-item-current .card {
+  border-color: rgba(var(--bs-primary-rgb), 0.5);
+  box-shadow: 0 0.25rem 1rem rgba(var(--bs-primary-rgb), 0.15) !important;
+}
+
+@media (min-width: 992px) {
+  .charity-timeline {
+    padding-left: 0;
+  }
+  .charity-timeline::before {
+    display: none;
+  }
+  .charity-timeline-marker {
+    display: none;
+  }
+}
